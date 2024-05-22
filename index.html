@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - Morada</title>
+
+
+  <link rel="stylesheet" href="./style/style.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> Morada
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Comprar</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Vender</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Listas</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Sobre nós</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-secondary">Cadastrar-se</a>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article class="article">
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+          <div class="hero-bg">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Vamos te ajudar a achar uma <span class="span">linda</span> casa!
+              </h1>
+              <p class="hero-text">
+                Uma ótima plataforma para comprar, vender e alugar seus imóveis sem nenhum extra-custo.
+              </p>
+            </div>
+          </div>
+          <div class="hero-form-wrapper">
+            <div class="form-tab">
+              <button class="tab-btn active" data-tab-btn>Comprar</button>
+              <button class="tab-btn" data-tab-btn>Alugar</button>
+              <button class="tab-btn" data-tab-btn>Vender</button>
+
+            </div>
+            <form action="" class="hero-form">
+              <div class="input-wrapper">
+
+                <label for="search" class="input-label">Procure: *</label>
+                <input type="search" name="search" id="search" placeholder="Procure sua casa" required class="input-field">
+                <ion-icon name="search-outline"></ion-icon>
+
+              </div>
+
+              <div class="input-wrapper">
+                <label for="category" class="input-label">Selecionar categorias</label>
+                <select name="category" id="category" class="dropdown-list">
+                  <option value="house">Casa</option>
+                  <option value="apartment">Apartamento</option>
+                  <option value="offices">Escritório</option>
+                  <option value="townhome">Residência</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="min-price" class="input-label">Preço minimo</label>
+                <select name="min-price" id="min-price" class="dropdown-list">
+                  <option value="min price">Preço minimo</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="3000">3000</option>
+                  <option value="400">4000</option>
+                  <option value="5000">5000</option>
+                  <option value="6000">6000</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="max-price" class="input-label">Preço máximo</label>
+                <select name="max-price" id="max-price" class="dropdown-list">
+                  <option value="max price">Preço maximo</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="2000">3000</option>
+                  <option value="4000">4000</option>
+                  <option value="5000">5000</option>
+                  <option value="6000">6000</option>
+                </select>
+              </div>
+
+              <button class="submit btn btn-primary">Procure</button>
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+            <img src="./img/casalermais.jpg" width="600" height="700" loading="lazy" alt="about banner" class="img-cover">
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <div class="about-content">
+            <h2 class="h2 section-title">Eficiência, Transparencia, Compromisso</h2>
+            <p class="section-text">
+              Morada é uma plataforma online que facilita compras, vendas e aluguéis de imóveis residenciais. Com uma interface intuitiva, conecta compradores, vendedores, locatários e proprietários, oferecendo uma experiência simplificada e segura. Com uma ampla gama de opções e recursos, a Morada torna o processo de encontrar a casa ou apartamento ideal mais conveniente e eficiente.
+            </p>
+            <a href="#" class="btn btn-primary">Ler Mais</a>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+          <h2 class="h2 section-title">Como funciona a plataforma</h2>
+          <p class="section-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, consectetur.
+          </p>
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">
+                  Avaliar uma Propriedade
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illo maxime voluptatibus.
+                </p>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">
+                  Conheça com um agente
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illo maxime voluptatibus.
+                </p>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">
+                  Feche um Negócio
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illo maxime voluptatibus.
+                </p>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section property" aria-label="property">
+        <div class="container">
+
+          <h2 class="h2 section-title">Propriedades em Destaque</h2>
+
+          <p class="section-text">
+            A melhor plataforma para comprar, vender e alugar, sem qualquer tipo de agente.
+          </p>
+
+          <ul class="property-list">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">342423</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">R$21491</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">14125</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">R$1000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">54354353</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">R$12412</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3243243</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">6 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">$9000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">85151</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">R$7000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="img/barraco_vale.jpeg" width="800" height="533" loading="lazy" alt="rua 128931298 194919 91 ce o 128198 498194" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">rua 128931298 194919 91 ce o 128198 498194</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">8000sqf</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Preço</span>
+
+                      <span class="meta-text">R$5000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliações</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0(30)</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Dúvidas? Nos Contate!</h2>
+
+          <p class="section-text">
+            A melhor plataforma para comprar, vender e alugar.
+          </p>
+
+          <button class="btn btn-primary">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <span class="span">Contato</span>
+          </button>
+
+        </div>
+      </section>
+
+
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="wrapper">
+            <h2 class="h2 section-title">Se inscreva para receber novidades!</h2>
+
+            <p class="section-text">Se inscreva para receber nossos updates</p>
+          </div>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Digite o seu Email :" aria-label="Enter your email" required class="email-field">
+
+            <button type="submit" class="btn btn-secondary">Se inscreva</button>
+          </form>
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="business-outline"></ion-icon> Morada
+          </a>
+
+          <p class="footer-text">
+            A melhor plataforma para comprar, vender e alugar!
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Sobre Nós</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Serviços</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Preços</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Site</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Login</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Termos de Serviço</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Política de Privacidade</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Listas</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Contato</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Nossos Contatos</p>
+          </li>
+
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="morada@morada.com" class="footer-link" morada@morada.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+34098412412" class="footer-link">34098412412</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Morada. Todos direitos reservados para 4mNATO <a href="#" class="copyright-link"></a>.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+  <script src="script/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
